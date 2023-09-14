@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamberger</title>
+    <style>
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+#hamnav {
+  width: 95vw;
+  /* background: #367da7; */
+}
+
+#hamitems { display: flex; }
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.7vw;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover { background: #0adfee; }
+
+#hamnav label, #hamburger { display: none; }
+/* .btn{
+     margin:0px 9px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    padding:4px 10px; 
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Dancing Script', cursive;
+   font-family: 'DM Sans', sans-serif;
+   font-family: 'Poppins', sans-serif;
+   text-shadow: 2px 2px 4px#000000;
+} */
+/* .btn:hover{
+    background-color: rgb(39, 235, 13);
+}
+.container{
+    border: 2px solid rgb(245, 236, 236);
+    margin:78px 74px;
+    padding:15px;
+    max-width:30%; */
+    /* margin: auto;
+    width: 100%;  */
+    /* justify-content: center;
+    border-radius: 28px; 
+} */
+/* .form-group input{
+    
+    text-align: center;
+    display: block;
+    width:250px;
+    border:2px solid rgb(14, 13, 13);
+    margin: 15px auto;
+    font-size:15px;
+    border-radius: 8px;
+    font-family: 'Lobster Two', cursive;
+    align-items: center;
+    
+}
+::placeholder{
+    font-family: 'Lobster Two', cursive;
+    font-size: 12px;
+    font-weight: bolder;
+    color: rgb(92, 231, 11);
+} */
+/* .container h3{
+    text-align: center;
+    color: rgb(36, 241, 9);
+}
+.container button{
+    display:block;
+    margin:13px auto;
+    width:25%;
+} */
+.background-clip{
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     z-index: -1;
+}
+
+@media screen and (max-width: 768px){
+
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    font-size: 5vw;
+    /* border-top: 1px solid #333; */
+  }
+ 
+  
+  #hamnav label { 
+    display:inline-block; 
+    color: rgb(12, 12, 12);
+    /* background:aqua; */
+    font-style: normal;
+    font-size: 8vw;
+    padding: 10px;
+  }
+  
+ 
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+
+}
+/* .btn{
+     margin:0px 9px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white; */
+    /* padding:4px 10px;  */
+    /* font-size:9px;
+    cursor: pointer;
+    font-family: 'Dancing Script', cursive;
+   font-family: 'DM Sans', sans-serif;
+   font-family: 'Poppins', sans-serif;
+   text-shadow: 2px 2px 4px#000000;
+}
+.btn:hover{
+    background-color: rgb(13, 17, 235);
+} */
+/* .container{
+    border: 2px solid rgb(243, 237, 237); */
+    /* margin:70px 74px;
+    padding:10px; */
+    /* max-width:30%; */
+    /* margin: auto;
+    width: 30%; 
+    align-items: center;
+    border-radius: 28px; 
+} */
+/* .form-group input{
+    
+    text-align: center;
+    display: block;
+    width:150px;
+    border:2px solid rgb(14, 13, 13); */
+    /* margin: 15px auto; */
+    /* font-size:15px;
+    border-radius: 8px;
+    font-family: 'Lobster Two', cursive;
+    align-items: center;
+    
+} */
+/* ::placeholder{
+    font-family: 'Lobster Two', cursive;
+    font-size: 10px;
+    font-weight: bolder;
+    color: rgb(194, 96, 96);
+} */
+/* .container h3{
+    text-align: center;
+    color:white;
+}
+.container button{
+    display:block;
+    margin:13px auto;
+    width:30%;
+} */
+@media screen and (max-width:600px){
+    .container{
+    border: 2px solid rgb(243, 237, 237);
+    margin:70px 74px;
+    padding:6px;
+    width:40%;
+    /* margin: auto;
+    width: 30%;  */
+    align-items: center;
+    border-radius: 28px; 
+}
+}
+@media screen and (max-width:380px){
+    .container{
+    border: 2px solid rgb(243, 237, 237);
+    margin:70px 74px;
+    padding:6px;
+    width:50%;
+    /* margin: auto;
+    width: 30%;  */
+    align-items: center;
+    border-radius: 28px; 
+}
+.form-group input{
+    
+    text-align: center;
+    display: block;
+    width:100px;
+    border:2px solid rgb(14, 13, 13);
+    /* margin: 15px auto; */
+    font-size:12px;
+    border-radius: 8px;
+    font-family: 'Lobster Two', cursive;
+    align-items: center;
+    
+}
+::placeholder{
+    font-family: 'Lobster Two', cursive;
+    font-size: 9px;
+    font-weight: bolder;
+    color: rgb(194, 96, 96);
+}
+.container h3{
+    text-align: center;
+    color:white;
+}
+.container button{
+    display:block;
+    margin:13px auto;
+    width:40%;
+}
+}
+@media (min-aspect-ratio:16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+
+}
+@media (max-aspect-ratio:16/9) {
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+
+}
+    </style>
+</head>
+<body>
+    <video autoplay loop plays-inline class="background-clip">
+        <!-- <source src="images/waterfall.mp4" type="video/mp4">  -->
+        <source src="images/water.mp4" type="video/mp4"> 
+        </video>
+   
+<nav id="hamnav">
+  
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+   
+    
+    <div id="hamitems">
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+  <!-- <div class="container"> 
+   
+        <h3>Join the best gym of Srinagar Now</h3>
+       
+        <form action="another.html">
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter Your Age">
+            </div>
+             <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter Your Gender">
+            </div> 
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter Your Location">
+             </div>
+             <button class="btn">Submit</button>
+              </form> -->
+</body>
+</html>
